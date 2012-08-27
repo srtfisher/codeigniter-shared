@@ -7,7 +7,10 @@ For controller names, you will prefix the class name with `Controller_`. So for 
 ### Setup
 To add this as a GIT Submodule, enter this command:
 
-`git submodule add git@github.com:srtfisher/codeigniter-shared system-ci`
+~~~~~
+git submodule add git@github.com:srtfisher/codeigniter-shared system-ci
+git submodule update --init
+~~~~~
 
 CodeIgniter's system file will be in the `system-ci` folder.
 
