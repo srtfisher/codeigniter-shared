@@ -76,7 +76,7 @@ class CI_Cache extends CI_Driver_Library {
 	 *
 	 * @return 	boolean		true on success/false on failure
 	 */
-	public function save($id, $data, $ttl = 0)
+	public function save($id, $data, $ttl = 60)
 	{
 		return $this->{$this->_adapter}->save($id, $data, $ttl);
 	}
