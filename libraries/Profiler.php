@@ -528,7 +528,8 @@ class CI_Profiler {
 	 */
 	public function run()
 	{
-		$output = "<div id='codeigniter_profiler' style='clear:both;background-color:#fff;padding:10px;'>";
+		$output = "<div id='codeigniter_profiler_wrap'><span id='ci_profiler'>Toggle Profiler</span>
+		<div id='codeigniter_profiler'  style='display:none; clear:both;background-color:#fff;padding:10px;'>";
 		$fields_displayed = 0;
 
 		foreach ($this->_available_sections as $section)
@@ -546,7 +547,7 @@ class CI_Profiler {
 			$output .= '<p style="border:1px solid #5a0099;padding:10px;margin:20px 0;background-color:#eee">'.$this->CI->lang->line('profiler_no_profiles').'</p>';
 		}
 
-		$output .= '</div>';
+		$output .= '</div></div>';
 
 		return $output;
 	}
